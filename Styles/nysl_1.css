@@ -1,0 +1,84 @@
+.background {
+    background-image: url(../Images/design1_image1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 16%;
+    height: 400px;
+    margin: 0px;
+}
+
+h1 {
+    text-align: left;
+    font-size: 48px;
+    font-family: Chalkboard;
+    color: lightgreen;
+    padding: 10px 10px 10px 10px;
+}
+
+.headline {
+    height: 30px;
+}
+
+
+h2 {
+    background-color: green;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Open Sans";
+    color: whitesmoke;
+    margin: 0px
+
+}
+
+h3 {
+    text-align: left;
+    font-size: 20px;
+    font-family: "Open Sans";
+    font-weight:bold;
+    color: black;
+    margin: 0px
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 390px;
+    right: 100px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation {
+    line-height: 2;
+}
+
+.select {
+    user-select: text;
+}
+
+.unselect {
+  text-decoration: none; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.information {
+    margin-left: 30px;
+    padding-top: 10px;  
+}
+
+.date {
+    font-style: italic;
+}
+
+.event {
+    text-indent: 20px;
+}
