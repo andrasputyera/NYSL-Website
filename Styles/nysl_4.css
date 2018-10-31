@@ -453,7 +453,7 @@ form {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
-    }
+}
 
 .school-half1 label {
     padding-top: 10px;
