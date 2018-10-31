@@ -445,19 +445,20 @@ form {
 
 .schoolcontainer {
     display: flex;
-    flex-direction:row;
+    flex-direction: column;
+    margin-left: 50px;
 }
 
 .school-half1 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-grow: 1;
-    margin-left: 50px;
-}
+    }
 
 .school-half1 label {
     padding-top: 10px;
     padding-bottom: 20px;
+    margin-right: 50px;
 }
 
 .school-half1 input {
