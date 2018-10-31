@@ -12,7 +12,7 @@
     <header>
         <nav class="navigation-wrapper">
             <ul>
-                <li class="homelink"><a class="nonactive" href="home2.html">Home</a></li>
+                <li class="homelink"><a class="nonactive" href="index.html">Home</a></li>
                 <li><a class="nonactive" href="about2.html">About</a></li>
                 <li><a class="nonactive" href="rules2.html">Rules</a></li>
                 <li><a class="nonactive" href="schedule2.html">Schedule</a></li>
@@ -32,7 +32,7 @@
 
     <section>
         <div class="imagebackground">
-            <img class="image-skewleft" src="Images/design4_image6.png">
+            <img class="image-skewleft" src="Images/design4_image6.png" alt="bg-image6">
         </div>
 
         <div class="sectionbackground">
@@ -69,7 +69,7 @@
                                 <div class="personalcontainer2">
 
                                     <div class="personal-half2contact">
-                                        <label>Parent&#47;Guardian:<input type="text" name="Parent"></label>
+                                        <label>Parent&#47;Guardian:<input type="text" name="Parent" required></label>
                                         <label>Contact Phone:<input type="tel" name="Contact_Phone" required></label>
                                         <label>Contact Email:<input type="email" name="Email" required></label>
                                     </div>
@@ -82,12 +82,12 @@
                                         </div>
                                         <p>Grade:</p>
                                         <div class="inner2">
-                                            <label><input type="radio" name="preschool">Pre-School</label>
-                                            <label><input type="radio" name="preschool">1<sup>st</sup></label>
-                                            <label><input type="radio" name="preschool">2<sup>nd</sup></label>
-                                            <label><input type="radio" name="preschool">3<sup>rd</sup></label>
-                                            <label><input type="radio" name="preschool">4<sup>th</sup></label>
-                                            <label><input type="radio" name="preschool">5<sup>th</sup></label>
+                                            <label><input type="radio" name="grade" value="pre-school">Pre-School</label>
+                                            <label><input type="radio" name="grade" value="first-grade">1<sup>st</sup></label>
+                                            <label><input type="radio" name="grade" value="second-grade">2<sup>nd</sup></label>
+                                            <label><input type="radio" name="grade" value="third-grade">3<sup>rd</sup></label>
+                                            <label><input type="radio" name="grade" value="fourth-grade">4<sup>th</sup></label>
+                                            <label><input type="radio" name="grade" value="fifth-grade">5<sup>th</sup></label>
                                         </div>
                                     </div>
 
@@ -100,6 +100,7 @@
                                         <p class="bold">Which elementary schools do you live near?</p>
                                         <label>First Closest School:
                                             <select>
+                                                <option value="empty">Choose a school</option>
                                                 <option value="AJ Katzenmaier" name="AJ Katzenmaier">AJ Katzenmaier</option>
                                                 <option value="Greenbay" name="Greenbay">Greenbay</option>
                                                 <option value="Howard" name="Howard">Howard A Yeage</option>
@@ -110,6 +111,7 @@
                                         </label>
                                         <label>Second Closest School:
                                             <select>
+                                                <option value="empty">Choose a school</option>
                                                 <option value="AJ Katzenmaier" name="AJ Katzenmaier">AJ Katzenmaier</option>
                                                 <option value="Greenbay" name="Greenbay">Greenbay</option>
                                                 <option value="Howard" name="Howard">Howard A Yeage</option>
@@ -124,7 +126,7 @@
                                 <div>
                                     <h2 class="containerinfo">Team Information</h2>
                                     <div class="teamcontainer">
-                                        <div class="uniform-half1">
+                                        <div class="position-current">
                                             <p><span class="bold">What position&#40;s&#41; do you normally play?</span>&#40;Check all that apply&#41;</p>
                                             <div class="inner1">
                                                 <label><input type="checkbox" name="position_current" value="forward">Forward</label>
@@ -132,6 +134,8 @@
                                                 <label><input type="checkbox" name="position_current" value="midfield">Midfield</label>
                                                 <label><input type="checkbox" name="position_current" value="goalkeeper">Goalkeeper</label>
                                             </div>
+                                        </div>
+                                        <div class="position-desired">
                                             <p><span class="bold">What position&#40;s&#41; do you want to play?</span>&#40;Check all that apply&#41;</p>
                                             <div class="inner2">
                                                 <label><input type="checkbox" name="position_desired" value="forward">Forward</label>
@@ -140,44 +144,58 @@
                                                 <label><input type="checkbox" name="position_desired" value="goalkeeper">Goalkeeper</label>
                                             </div>
                                         </div>
-                                        <label class="bold">Already Have a Uniform<input type="radio"></label>
-                                        <p class="bold">Jersey Size:</p>
-                                        <div class="team-half1">
-                                            <label>Youth Small<input type="radio" name="jersey_size"></label>
-                                            <label>Youth Medium<input type="radio" name="jersey_size"></label>
-                                            <label>Youth Large<input type="radio" name="jersey_size"></label>
-                                            <label>Small<input type="radio" name="jersey_size"></label>
-                                            <label>Medium<input type="radio" name="jersey_size"></label>
-                                            <label>Large<input type="radio" name="jersey_size"></label>
-                                            <label>Extra-Large<input type="radio" name="jersey_size"></label>
-                                        </div>
-                                        <div class="uniform-half1">
-                                            <p class="bold">Shorts Size:</p>
-                                            <label>Youth Small<input type="radio" name="shorts_size"></label>
-                                            <label>Youth Medium<input type="radio" name="shorts_size"></label>
-                                            <label>Youth Large<input type="radio" name="shorts_size"></label>
-                                            <label>Small<input type="radio" name="shorts_size"></label>
-                                            <label>Medium<input type="radio" name="shorts_size"></label>
-                                            <label>Large<input type="radio" name="shorts_size"></label>
-                                            <label>Extra-Large<input type="radio" name="shorts_size"></label>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <h2 class="containerinfo"> Parental Permission</h2>
-                                <div class="permissioncontainer">
-                                    <p><span class="bold">Permission to Play</span></p>
-                                    <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League” accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL sponsored activities, which transportation.</p>
-                                    <p>By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the cancellation policy and agree to its terms.</p>
-                                    <label class="signature">Parent&#47;Guardian Signature:<input type="text" required></label>
-                                    <label>Date:<input type="date" required></label>
-                                    <div>
-                                        <button type="submit">Submit</button>
+                                        <div class="uniform-enquiery">
+                                            <label class="bold">Already have a uniform<input type="checkbox" name="uniform" value="yes"></label></div>
+
+                                        <div class="uniform-jersey">
+                                            <p class="bold">Jersey size:</p>
+                                            <div class="inner1">
+                                                <label><input type="radio" name="jersey_size" value="youth-small">Youth Small</label>
+                                                <label><input type="radio" name="jersey_size" value="youth-medium">Youth Medium</label>
+                                                <label><input type="radio" name="jersey_size" value="youth-large">Youth Large</label>
+                                                <label><input type="radio" name="jersey_size" value="small">Small</label>
+                                                <label><input type="radio" name="jersey_size" value="medium">Medium</label>
+                                                <label><input type="radio" name="jersey_size" value="large">Large</label>
+                                                <label><input type="radio" name="jersey_size" value="extra-large">Extra-Large</label>
+                                            </div>
+                                        </div>
+                                        <div class="uniform-shorts">
+                                            <p class="bold">Shorts size:</p>
+                                            <div class="inner2">
+                                                <label><input type="radio" name="shorts_size" value="youth-small">Youth Small</label>
+                                                <label><input type="radio" name="shorts_size" value="youth-medium">Youth Medium</label>
+                                                <label><input type="radio" name="shorts_size" value="youth-large">Youth Large</label>
+                                                <label><input type="radio" name="shorts_size" value="small">Small</label>
+                                                <label><input type="radio" name="shorts_size" value="medium">Medium</label>
+                                                <label><input type="radio" name="shorts_size" value="large">Large</label>
+                                                <label><input type="radio" name="shorts_size" value="extra-large">Extra-Large</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h2 class="containerinfo"> Parental Permission</h2>
+                                    <div class="permissioncontainer">
+                                        <p><span class="bold">Permission to play</span></p>
+                                        <p class="permissionbody">I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League” accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL sponsored activities, which transportation.</p>
+                                        <p class="permissionsignature">By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the cancellation policy and agree to its terms.</p>
+
+                                        <div class="signature-wrapper">
+                                            <label class="signature">Parent&#47;Guardian Signature:<input type="text" required></label>
+                                            <label>Date:<input type="date" name="signature-date" required></label>
+                                        </div>
+                                    </div>
+                                    <div class="submit">
+                                        <input type="submit" value="SUBMIT">
                                     </div>
                                 </div>
+                            </form>
+
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
     </section>
 
     <footer>

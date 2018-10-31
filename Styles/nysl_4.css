@@ -361,11 +361,14 @@ tr:hover {
     line-height: 2;
 }
 
+form {
+    margin-top: 50px;
+}
+
 
 .containerinfo {
-    margin: 20px 50px 20px 50px;
     text-decoration: underline;
-    margin: 20px 50px 20px 50px;
+    margin: 15px 50px 20px 50px;
 }
 
 .personalcontainer1 {
@@ -379,7 +382,7 @@ tr:hover {
     flex-direction: column;
     flex-grow: 1;
     box-sizing: border-box;
-    margin: 0px 50px 20px 50px;
+    margin: 0px 50px 0px 50px;
 }
 
 .personal-half1 label {
@@ -408,7 +411,7 @@ tr:hover {
     order: 1;
     flex-direction: column;
     flex-grow: 1;
-    margin: 0px 50px 20px 50px;
+    margin: 0px 50px 0px 50px;
     width: 100%;
 }
 
@@ -467,47 +470,158 @@ tr:hover {
     flex-direction: column;
     flex-grow: 1;
     margin-left: 50px;
-    margin-top: 10px;
 }
 
-.position-half1 {
+.position-current {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    margin-left: 10px;
+    margin-bottom: 20px;
 }
 
-.position-half1 div {
+.position-current div {
     padding-top: 5px;
 }
 
-.position-half1 label {
+.position-current label {
     padding-top: 10px;
     padding-bottom: 20px;
 }
 
-.position-half1 input {
-    margin-right: 10px; 
+.position-current input {
+    margin: 0px 5px; 
 }
 
-.team-half1 { 
-    
+.position-desired {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
 
-.uniform-half1 label {
-    margin-left: 20px;   
+.position-desired div {
+    padding-top: 5px;
 }
 
-.uniform-half1 input {
-    margin-left: 10px
+.position-desired label {
+    padding-top: 10px;
 }
+
+.position-desired input {
+    margin: 0px 5px;
+}
+
+.uniform-enquiery { 
+    padding-bottom: 20px;
+}
+
+.uniform-enquiery input {
+    margin: 0px 5px;
+}
+
+.uniform-jersey {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;    
+}
+
+.uniform-jersey div {
+    padding-top: 5px;
+}
+
+.uniform-jersey label {
+    padding-top: 10px;
+}
+
+.uniform-jersey input {
+    margin: 0px 5px
+}
+
+.uniform-shorts {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;    
+}
+
+.uniform-shorts div {
+    padding-top: 5px;
+}
+
+.uniform-shorts label {
+    padding-top: 10px;
+}
+
+.uniform-shorts input {
+    margin: 0px 5px
+}
+
 
 .permissioncontainer {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    padding: 30px;
+    margin-left: 50px;
 }
+
+.permissionbody {
+    margin: 20px 50px 0px 0px;
+}
+
+.permissionsignature {
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.signature-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    margin: 20px 50px 0px 0px;
+    width: 30%;
+}
+
+.signature-wrapper label {
+    padding-bottom: 20px;
+}
+
+.signature-wrapper input {
+    margin-top: 10px;
+    width: 100%;
+    height: 20px;
+}
+
+.signature {
+    margin-right: 50px;        
+}
+
+.submit {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 50px;
+    
+}
+
+.submit input {
+    width: 100px;
+    background-color: #7ED321;
+    color: white;
+    padding: 14px 20px;
+    margin 8px 0px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submittable {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.submittable th {
+    width: 400px;
+}
+
 
 .contactinfo {
     display: flex;
@@ -524,6 +638,7 @@ tr:hover {
     font-size: 24px;
     font-weight: 550;
 }
+
 
 
 /*FOOTER*/
